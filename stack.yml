@@ -1,0 +1,254 @@
+version: '3'
+services:
+  node01:
+    container_name: spacemesh_node01
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6001:6001
+    volumes:
+      - /home/hakedev/nodes/node01:/node
+      - /media/postdata01:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.101
+    cpu_shares: 1024
+
+  node02:
+    container_name: spacemesh_node02
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6002:6002
+    volumes:
+      - /home/hakedev/nodes/node02:/node
+      - /media/postdata02:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.102
+    cpu_shares: 992
+
+  node03:
+    container_name: spacemesh_node03
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6003:6003
+    volumes:
+      - /home/hakedev/nodes/node03:/node
+      - /media/postdata03:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.103
+    cpu_shares: 960
+
+  node04:
+    container_name: spacemesh_node04
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6004:6004
+    volumes:
+      - /home/hakedev/nodes/node04:/node
+      - /media/postdata04:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.104
+    cpu_shares: 928
+
+  node05:
+    container_name: spacemesh_node05
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6005:6005
+    volumes:
+      - /home/hakedev/nodes/node05:/node
+      - /media/postdata05:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.105
+    cpu_shares: 896
+
+  node06:
+    container_name: spacemesh_node06
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6006:6006
+    volumes:
+      - /home/hakedev/nodes/node06:/node
+      - /media/postdata06:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.106
+    cpu_shares: 864
+
+  node07:
+    container_name: spacemesh_node07
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6007:6007
+    volumes:
+      - /home/hakedev/nodes/node07:/node
+      - /media/postdata07:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.107
+    cpu_shares: 832
+
+  node08:
+    container_name: spacemesh_node08
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6008:6008
+    volumes:
+      - /home/hakedev/nodes/node08:/node
+      - /media/postdata08:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.108
+    cpu_shares: 800
+
+  node09:
+    container_name: spacemesh_node09
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6009:6009
+    volumes:
+      - /home/hakedev/nodes/node09:/node
+      - /media/postdata09:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.109
+    cpu_shares: 768
+
+  node10:
+    container_name: spacemesh_node10
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6010:6010
+    volumes:
+      - /home/hakedev/nodes/node10:/node
+      - /media/postdata10:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.110
+    cpu_shares: 736
+
+  node11:
+    container_name: spacemesh_node11
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6011:6011
+    volumes:
+      - /home/hakedev/nodes/node11:/node
+      - /media/postdata11:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.111
+    cpu_shares: 704
+
+  node12:
+    container_name: spacemesh_node12
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6012:6012
+    volumes:
+      - /home/hakedev/nodes/node12:/node
+      - /media/postdata12:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.112
+    cpu_shares: 672
+
+  node13:
+    container_name: spacemesh_node13
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6013:6013
+    volumes:
+      - /home/hakedev/nodes/node13:/node
+      - /media/postdata13:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.113
+    cpu_shares: 640
+
+  node14:
+    container_name: spacemesh_node14
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6014:6014
+    volumes:
+      - /home/hakedev/nodes/node14:/node
+      - /media/postdata14:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.114
+    cpu_shares: 608
+
+  node15:
+    container_name: spacemesh_node15
+    image: spacemeshos/go-spacemesh:v1.2.1
+    command: ["--config", "/node/config.mainnet.json"]
+    ports:
+      - 6015:6015
+    volumes:
+      - /home/hakedev/nodes/node15:/node
+      - /media/postdata15:/postdata
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.115
+    cpu_shares: 576
+    
+  prometheus: 
+    image: prom/prometheus:latest
+    container_name: prometheus
+    command: "--config.file=/etc/prometheus/prometheus.yml"
+    user: root
+    volumes:
+      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - 9090:9090
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.100
+    depends_on:
+    - cadvisor
+    
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+    - 8080:8080
+    volumes:
+    - /:/rootfs:ro
+    - /var/run:/var/run:rw
+    - /sys:/sys:ro
+    - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      spacenet:
+        ipv4_address: 172.18.0.99
+        
+volumes:
+  prometheus_data:
+  
+networks:
+  spacenet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/16  # Define the desired subnet
+          gateway: 172.18.0.1   # Define the desired gateway
+          
