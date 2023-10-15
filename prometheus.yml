@@ -1,0 +1,79 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['172.18.0.100:9090']
+
+  - job_name: 'node'
+    static_configs:
+      - targets: ['172.17.0.1:9100']
+
+  - job_name: 'cadvisor'
+    scrape_interval: 5s
+    static_configs:
+    - targets:
+      - '172.18.0.99:8080'
+
+  - job_name: 'spacemesh'
+    static_configs:
+      - targets: ["172.18.0.101:10001"]
+        labels:
+          name: 'node01'
+
+      - targets: ["172.18.0.102:10002"]
+        labels:
+          name: 'node02'
+
+      - targets: ["172.18.0.103:10003"]
+        labels:
+          name: 'node03'
+
+      - targets: ["172.18.0.104:10004"]
+        labels:
+          name: 'node04'
+
+      - targets: ["172.18.0.105:10005"]
+        labels:
+          name: 'node05'
+
+      - targets: ["172.18.0.106:10006"]
+        labels:
+          name: 'node06'
+
+      - targets: ["172.18.0.107:10007"]
+        labels:
+          name: 'node07'
+
+      - targets: ["172.18.0.108:10008"]
+        labels:
+          name: 'node08'
+
+      - targets: ["172.18.0.109:10009"]
+        labels:
+          name: 'node09'
+
+      - targets: ["172.18.0.110:10010"]
+        labels:
+          name: 'node10'
+
+      - targets: ["172.18.0.111:10011"]
+        labels:
+          name: 'node11'
+
+      - targets: ["172.18.0.112:10012"]
+        labels:
+          name: 'node12'
+
+      - targets: ["172.18.0.113:10013"]
+        labels:
+          name: 'node13'
+
+      - targets: ["172.18.0.114:10014"]
+        labels:
+          name: 'node14'
+
+      - targets: ["172.18.0.115:10015"]
+        labels:
+          name: 'node15'

@@ -2,7 +2,7 @@
     "main": {
         "data-folder": "/node/sm_data",
         "metrics": true,
-        "metrics-port": 10015,
+        "metrics-port": 10001,
         "layer-duration": "5m",
         "layers-per-epoch": 4032,
         "poet-server": [
@@ -69,11 +69,11 @@
             "smesher",
             "admin"
         ],
-        "grpc-private-listener": "127.0.0.1:9093",
+        "grpc-private-listener": "0.0.0.0:9093",
         "grpc-json-listener": "0.0.0.0:9094"
     },
     "p2p": {
-        "listen": "/ip4/0.0.0.0/tcp/6015",
+        "listen": "/ip4/0.0.0.0/tcp/6001",
         "disable-reuseport": false,
         "p2p-disable-legacy-discovery": true,
         "autoscale-peers": true,
@@ -102,14 +102,14 @@
         "smeshing-opts": {
             "smeshing-opts-maxfilesize": 2147483648,
             "smeshing-opts-provider": 4294967295,
-            "smeshing-opts-numunits": 6,
+            "smeshing-opts-numunits": 4,
             "smeshing-opts-datadir": "/postdata"
         },
         "smeshing-proving-opts": {
             "smeshing-opts-proving-nonces": 144,
-            "smeshing-opts-proving-threads": 16
+            "smeshing-opts-proving-threads": 8
         },
         "smeshing-coinbase": "sm1qqqqqqxgw2e4qw9q9gzyqmqu92u9t5p22k9p7rg82v9n4",
-        "smeshing-start": true
+        "smeshing-start": false
     }
 }
