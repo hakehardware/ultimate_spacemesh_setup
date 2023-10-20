@@ -79,8 +79,8 @@
         "disable-dht": true,
         "bootnodes": [],
         "direct": [
-            "/ip4/172.18.0.101/tcp/6001/p2p/<PUBLIC NODE NETWORK ID>",
-            "/ip4/172.18.0.102/tcp/6002/p2p/<PUBLIC NODE NETWORK ID"
+            "/ip4/<PUBLIC NODE IP>/tcp/6001/p2p/<PUBLIC NODE NETWORK ID>",
+            "/ip4/<PUBLIC NODE IP>/tcp/6002/p2p/<PUBLIC NODE NETWORK ID"
         ]
     },
     "logging": {
